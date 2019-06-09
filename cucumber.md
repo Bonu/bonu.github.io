@@ -1,3 +1,4 @@
+```
 Feature: Home Page
   In order to test Home Page of application
   As a Registered user
@@ -21,11 +22,12 @@ Feature: Home Page
     When user focuses on Top Banner
     Then user gets an option of home page
 
+```
 
 All the Steps mentioned in the Background keyword will be executed before each Scenario or Scenario Outline in a Feature file.
 
 
-
+```
 Scenario: Existing user Verification
     Given user is on Application landing page
     Then we verify user "Shankar" with password "P@ssword123", phone "999" exists
@@ -41,10 +43,11 @@ Given user is on Application landing page
       | Ram     | ram@email.com   | 888   |
       | Sham    | sham@email.org  | 666   |
       
-      
+ ```     
  
  A Scenario Outline is run once for each row in the Examples section beneath it (not counting the first row of column headers).
  
+ ```
  Scenario Outline: Login fail - possible combinations
     Given user is on Application landing page
     When user clicks on Sign in button
@@ -60,7 +63,9 @@ Given user is on Application landing page
       | ShankarGarg   | wrongpassword |
       | wrongusername | wrongpassword |
       
-      
+  ```
+  
+  
       
       
     
